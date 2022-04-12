@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-cadastro.css">
+    <title>Cadastro/InternOut</title>
+</head>
+<body id="body" onclick="toggleBody()">
+   <header id="header">
+    <a id="logo" class="a-header" href="">InternOut</a>
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false" onclick="toggleMenu()">Menu
+        <span id="hamburger"></span>
+      </button>
+      <ul id="menu" role="menu">
+        <li><a class="a-header" href="/">Contato</a></li>
+        <li><a class="a-header" href="/">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+    <div class = "box">
+        <form action="">
+            <fieldset>
+                    <legend><b>Dados</b></legend>
+                    <div class = "inputBox">
+                        <input type="text" name="nome" id="nome"class ="inputUser" required>
+                        <label for="nome" class="labelInput">Nome do aluno completo:</label>
+                        <span class="focus-input"></span>
+                    </div>
+                    
+                    <div class="inputBox">
+                        <input type="text" name="acao" id="acao" class="inputUser" required>
+                        <label for="acao" class="labelInput">E-mail:</label>
+                        <span class="focus-input"></span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" name="password" id="password" class="inputUser" required>
+                        <label for="telefone1" class="labelInput">Senha:</label>
+                       <span class="focus-input"></span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="number" name="telefone2" id="telefone2" class="inputUser" required>
+                        <label for="telefone2" class="labelInput">Número de contato do responsável: </label>
+                      <span class="focus-input"></span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="number" name="numID" id="numID" class="inputUser" required>
+                        <label for="telefone2" class="labelInput" >Número de identificação estudantil:</label>
+                        <span class="focus-input"></span>
+                    </div>
+                    <p><b>Quarto:</b></p>
+                    <div id="quartos">
+                      <div> 
+                        <label for="quarto1" id="radio1">1-1</label>
+                        <input type="radio" name="quarto1" id="quarto1" value="quarto1" checked>
+                        
+                        <label for="quarto1" id="radio2"> 2-1 </label>
+                        <input type="radio" name="quarto1" id="quarto1" value="quarto1">
+              
+                        <label for="quarto1" id="radio3"> 3-1 </label>
+                        <input type="radio" name="quarto1" id="quarto1" value="quarto1">
+                        
+                      </div>
+                        <div>
+                            <label for="quarto1" id="radio4"> 1-2 </label>
+                        <input type="radio" name="quarto1" id="quarto1" value="quarto1">
+                        
+                         <label for="quarto1" id="radio5"> 2-2 </label>
+                        <input type="radio" name="quarto1" id="quarto1" value="quarto1">
+                       
+                       <label for="quarto1" id="radio6"> 3-2 </label>
+                        <input type="radio" name="quarto1" id="quarto1" value="quarto1">
+                        
+                        </div>
+                        <div>
+                            <label for="quarto1" id="radio7"> 1-3 </label>
+                        <input type="radio" name="quarto1" id="quarto1" value="quarto1">
+                       <label for="quarto1" id="radio8"> 2-3 </label>
+                        <input type="radio" name="quarto1" id="quarto1" value="quarto1">
+                        <label for="quarto1" id="radio9"> 3-3 </label>
+                        <input type="radio" name="quarto1" id="quarto1" value="quarto1">
+                        </div>
+
+                       <div> 
+                        <label for="quarto1" id="radio10"> 1-4 </label>
+                        <input type="radio" name="quarto1" id="quarto1" value="quarto1">
+                        
+                        <label for="quarto1" id="radio11"> 2-4 </label>
+                        <input type="radio" name="quarto1" id="quarto1" value="quarto1">
+                        
+                        <label for="quarto1" id="radio12"> 3-4 </label>
+                        <input type="radio" name="quarto1" id="quarto1" value="quarto1">
+                        
+                       </div>
+                    </div>
+                    <input type="submit" value="Cadastrar" id="btn-cadastrar">
+                   
+            </fieldset>
+        </form>
+    </div>
+    <script src="JavaScript-cadastro.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
