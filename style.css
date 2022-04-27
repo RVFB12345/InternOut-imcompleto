@@ -4,7 +4,7 @@
 }
 body{
     background: url(img-servidor.png);
-    background-size: 1650px;
+    background-size: 1920px;
     background-repeat: no-repeat;
     background-position-y: -100px;
 }
@@ -23,16 +23,7 @@ body{
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-#imgUser{
-    display: block;
-    content: "";
-    background: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-#title{
-    color: white;
+h1{
     text-align: center;
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
@@ -42,7 +33,6 @@ body{
     width: auto;
     justify-content: space-around;
     margin-top: 200px;
-    z-index: 1;
 }
 li{
     list-style: none;
@@ -52,23 +42,9 @@ li{
 .li-final{
     border-bottom: none;
 }
-.quartos{
-    position: relative;
-    top: -200px;
-    background: transparent;
-    color: transparent;
-    transition: .5s;
-    z-index: -1;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    height: 168px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.pavilhao{
+    height: 200px;
+    border-radius: 30px;
 }
 .pavilhoes{
     width: 300px;
@@ -81,20 +57,36 @@ li{
     color: white;
     cursor: pointer;
     transition: .5s;
-    z-index: 1000;
+    z-index: 1;
+    position: relative;
 }
-.pavilhao{
-    height: 100px;
-    border-radius: 30px;
-    z-index: -1000;
+.quartos{
+    position: fixed;
+    top: 320px;
+    background: #3CB371;
+    transition: .5s;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 168px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .pavilhao:hover > .quartos{
-    margin-top: 185px;
+    margin-top: 25px;
     color: white;
     border-top-left-radius: none;
     border-top-right-radius: none;
-    background: #3CB371;
-    color: white;
+}
+.pavilhoes:hover {
+  height: 50px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 /*Header menu*/
 a {
@@ -107,7 +99,7 @@ a {
       border-bottom: none;
   }
   .a-header:hover{
-      background: #696969;
+      background: #008000;
   }
   #logo {
     font-size: 1.5rem;
@@ -122,7 +114,7 @@ a {
     align-items: center;
     justify-content: space-between;
     background: #4F4F4F;
-    position: relative;
+    position: sticky;
     top: 0px;
     left: 0px;
     z-index: 1000;
@@ -153,13 +145,6 @@ a {
     margin-bottom: 10px;
   }
   @media (max-width: 600px) {
-    #title{
-      display: none;
-    }
-    body{
-      background: url(FundoMobile.jpg);
-      background-size: cover;
-    }
     .box{
       width: 300px;
       position: relative;
@@ -173,22 +158,21 @@ a {
       top: 50px;
       right: 0px;
       background: #4F4F4F;
-      transition: all 0.5s;
+      transition: 0.5s;
       z-index: 1000;
       height: 0px;
       visibility: hidden;
       overflow-y: hidden;
-      z-index: 1000;
     }
     #nav.active #menu {
-      height: 10rem;
+      height: 9.8rem;
       visibility: visible;
       overflow-y: auto;
     }
     #menu a {
-      padding: 1rem 1rem;
-      margin: 0 0;
-      border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid rgba(0, 0, 0, .1);
     }
     #btn-mobile {
       display: flex;
@@ -225,6 +209,9 @@ a {
       transform: rotate(-135deg);
       top: -7px;
     }
+    #title{
+      display: none; 
+    }
     #container{
       display: block;
       text-align: center;
@@ -232,30 +219,26 @@ a {
       top: -11rem;
     }
     .pavilhao{
-      margin-top: 11rem;
-      background: red;
-      height: 50px;
       width: 300px;
-      margin-left: -20rem;
-      background: red;
+      margin: auto;
+      margin-top: 30px;
     }
     .pavilhoes{
-      outline: none;
-      margin-left: 23rem;
+      position: fixed;
+      right: 2.9rem;
+      top: ;
     }
     .quartos{
-      width: 70vw;
-      position: relative;
-      left: 23.8rem;
-      transition: all .5;
+      position: fixed;
+      top: px;
     }
-  .pavilhoes:hover{
-      height: 50px;
-}
-.pavilhao:hover > .quartos{
-  z-index: 
-}
-.quartos:hover{
-    margin-top: 85px;
-}
+    #quarto1{
+      top: 80px;
+    }
+    #quarto2{
+      top: 19.5rem;
+    }
+    #quarto3{
+      top: 34rem;
+    }
   }
