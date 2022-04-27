@@ -24,6 +24,7 @@ body{
     border-bottom-right-radius: 15px;
 }
 h1{
+    color: white;
     text-align: center;
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
@@ -45,6 +46,7 @@ li{
 .pavilhao{
     height: 200px;
     border-radius: 30px;
+    position: relative;
 }
 .pavilhoes{
     width: 300px;
@@ -63,6 +65,7 @@ li{
 .quartos{
     position: fixed;
     top: 320px;
+    margin-left: 15px;
     background: #3CB371;
     transition: .5s;
     border-bottom-left-radius: 15px;
@@ -70,7 +73,7 @@ li{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     height: 168px;
-    width: 300px;
+    width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -83,7 +86,7 @@ li{
     border-top-left-radius: none;
     border-top-right-radius: none;
 }
-.pavilhoes:hover {
+.pavilhao:hover > .pavilhoes {
   height: 50px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -99,7 +102,7 @@ a {
       border-bottom: none;
   }
   .a-header:hover{
-      background: #008000;
+      background: #363636;
   }
   #logo {
     font-size: 1.5rem;
@@ -226,11 +229,11 @@ a {
     .pavilhoes{
       position: fixed;
       right: 2.9rem;
-      top: ;
     }
     .quartos{
       position: fixed;
-      top: px;
+      left: 37px;
+      width: 70%;
     }
     #quarto1{
       top: 80px;
